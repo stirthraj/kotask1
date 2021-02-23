@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
 
 export default class form extends Component {
   render() {
@@ -15,7 +16,6 @@ export default class form extends Component {
                 name="firstname"
                 placeholder="Your name.."
               />
-
               <label>Email</label>
               <input
                 type="text"
@@ -23,20 +23,14 @@ export default class form extends Component {
                 name="lastname"
                 placeholder="Your last name.."
               />
-
               <label>Select fruit</label>
               <select id="country" name="country">
-                <option value="australia">Grapefruit</option>
+                <option>Grapefruit</option>
               </select>
-
               <label>Message</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder=""
-              ></textarea>
-
-              <input type="submit" value="Submit" />
+              <textarea id="subject" name="subject" placeholder=""></textarea>
+              {/* <input type="submitnpm" value="Submit" /> */}
+              <Button variant="primary" size="lg">Submit</Button>{" "}
             </form>
           </div>
           <div className="column">

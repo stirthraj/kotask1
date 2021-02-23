@@ -107,6 +107,7 @@ tr:nth-child(even) {
 }
 .col-graph{
   padding: 5px;
+  height:300px;
 }
 .heading{
   float: left;

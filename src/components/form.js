@@ -7,8 +7,8 @@ export default class form extends Component {
         <h1>User Profile</h1>
         <div className="row">
           <div className="column">
-            <form action="action_page.php">
-              <label for="fname">Full Name</label>
+            <form>
+              <label>Full Name</label>
               <input
                 type="text"
                 id="fname"
@@ -16,7 +16,7 @@ export default class form extends Component {
                 placeholder="Your name.."
               />
 
-              <label for="lname">Email</label>
+              <label>Email</label>
               <input
                 type="text"
                 id="lname"
@@ -24,12 +24,12 @@ export default class form extends Component {
                 placeholder="Your last name.."
               />
 
-              <label for="country">Select fruit</label>
+              <label>Select fruit</label>
               <select id="country" name="country">
                 <option value="australia">Grapefruit</option>
               </select>
 
-              <label for="subject">Message</label>
+              <label>Message</label>
               <textarea
                 id="subject"
                 name="subject"
@@ -39,7 +39,7 @@ export default class form extends Component {
               <input type="submit" value="Submit" />
             </form>
           </div>
-          <div class="column">
+          <div className="column">
             <table>
               <thead>
                 <tr>

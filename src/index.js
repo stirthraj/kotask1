@@ -9,47 +9,48 @@ import './App.css'
 
 
 export default class App extends Component {
-    render() {
-        return (
-          <div className="main">
-            <BrowserRouter>
-              <div className="menu">
-                <div>
-                  <button>toggle</button>
-                </div>
-                <Link to="/a">
-                  <div>DashBoard</div>
-                </Link>
-                <Link to="/b">
-                  <div>
-                    User Profile
-                  </div>
-                </Link>
-                <Link to="/c">
-                  <div>Form</div>
-                </Link>
-                <Link to="/d">
-                  <div>Map</div>
-                </Link>
-              </div>
-              <Switch>
-                <Route path="/a">
-                  <Dashboard />
-                </Route>
-                <Route path="/b">
-                  <User />
-                </Route>
-                <Route path="/c">
-                  <Form />
-                </Route>
-                <Route path="/d">
-                  <Map />
-                </Route>
-              </Switch>
-            </BrowserRouter>
+  render() {
+    return (
+      <div className="main">
+        <BrowserRouter>
+          <div id="menu" className="menu">
+            <div>
+              <button onClick={this.Effect}>toggle</button>
+            </div>
+            <Link to="/">
+              <div>DashBoard</div>
+            </Link>
+            <Link to="/b">
+              <div>User Profile</div>
+            </Link>
+            <Link to="/c">
+              <div>Form</div>
+            </Link>
+            <Link to="/d">
+              <div>Map</div>
+            </Link>
           </div>
-        );
-    }
+          <Switch>
+            <Route exact path="/">
+              <Dashboard />
+            </Route>
+            <Route exact path="/b">
+              <User />
+            </Route>
+            <Route exact path="/c">
+              <Form />
+            </Route>
+            <Route exact path="/d">
+              <Map />
+            </Route>
+          </Switch>
+        </BrowserRouter>
+      </div>
+    );
+  }
+  Effect = () => {
+    document.getElementById("menu").style.width = "70px";
+  };
 }
 
 ReactDOM.render(<App/>,

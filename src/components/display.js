@@ -75,7 +75,7 @@ export default class display extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <h1>User Profile</h1>
+        <h1 className="bg-primary text-light">User Profile</h1>
         <div className="row">
           <div className="column">
             <div className="col-text">
@@ -97,7 +97,6 @@ export default class display extends Component {
                     label
                   />
                   <Tooltip />
-                  
                 </PieChart>
               </ResponsiveContainer>
               <hr />

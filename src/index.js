@@ -8,27 +8,31 @@ import Form from '../src/components/form'
 import Map from '../src/components/map'
 import './App.css'
 
-
 export default class App extends Component {
   render() {
     return (
       <div className="main">
         <BrowserRouter>
           <div id="menu" className="menu">
-            <div>
-              <button onClick={this.Effect}>toggle</button>
-            </div>
+            <button onClick={this.Effect}>
+              <i class="fas fa-toggle-on"></i>
+              <span className="link-text">Shrink</span>
+            </button>
             <Link to="/">
-              <div>DashBoard</div>
+              <i className="fas fa-tachometer-alt"></i>
+              <span className="link-text">DashBoard</span>
             </Link>
             <Link to="/b">
-              <div>User Profile</div>
+              <i className="fas fa-id-badge"></i>
+              <span className="link-text">User Profile</span>
             </Link>
             <Link to="/c">
-              <div>Form</div>
+              <i className="fab fa-wpforms"></i>
+              <span className="link-text">Form</span>
             </Link>
             <Link to="/d">
-              <div>Map</div>
+              <i className="fas fa-map-marker-alt"></i>
+              <span className="link-text">Map</span>
             </Link>
           </div>
           <Switch>
@@ -52,11 +56,24 @@ export default class App extends Component {
   Effect = () => {
     
     const menu=document.getElementById("menu");
-    if(menu.clientWidth!==80){
-     menu.style.width = "80px";
+    const linktext = document.getElementsByClassName("link-text");
+    // alert(menu.clientWidth);
+    if(menu.clientWidth!==50){
+     menu.style.width = "50px";
+          linktext[0].style.display = "none";
+          linktext[1].style.display = "none";
+          linktext[2].style.display = "none";
+          linktext[3].style.display = "none";
+          linktext[4].style.display = "none";
+          
     }
     else{
-      menu.style.width = "120px";
+      menu.style.width = "150px";
+      linktext[0].style.display = "block";
+      linktext[1].style.display = "block";
+      linktext[2].style.display = "block";
+      linktext[3].style.display = "block";
+      linktext[4].style.display = "block";
     }
     
   };

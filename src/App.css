@@ -5,12 +5,10 @@
     background-color: rgb(54, 52, 52);
     display: flex;
     flex-flow: column;
-    align-items: center;
-    justify-content:flex-start;
     color: white;
-    text-align: center;
-    width: 120px;
+    width: 150px;
     height: 100vh;
+    padding:5px;
 }
 .menu>div,a{
     padding: 10px 4px;
@@ -119,4 +117,11 @@ tr:nth-child(even) {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+}
+i{
+  width:25px;
+  padding-right: 10px;
+  margin-right: 5px;
+  float: left;
+  font-size: 20px;
 }

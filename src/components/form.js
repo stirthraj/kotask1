@@ -5,7 +5,7 @@ export default class form extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <h1>User Profile</h1>
+        <h1 className="bg-primary text-light">User Profile</h1>
         <div className="row">
           <div className="column">
             <form>
@@ -30,7 +30,9 @@ export default class form extends Component {
               <label>Message</label>
               <textarea id="subject" name="subject" placeholder=""></textarea>
               {/* <input type="submitnpm" value="Submit" /> */}
-              <Button variant="primary" size="lg">Submit</Button>{" "}
+              <Button variant="primary" size="lg">
+                Submit
+              </Button>{" "}
             </form>
           </div>
           <div className="column">

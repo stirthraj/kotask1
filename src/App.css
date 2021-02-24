@@ -9,8 +9,8 @@
     justify-content:flex-start;
     color: white;
     text-align: center;
-    width: 100px;
-    height: 96vh;
+    width: 120px;
+    height: 100vh;
 }
 .menu>div,a{
     padding: 10px 4px;
@@ -21,11 +21,6 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 .content-profile{
     display: flex;
@@ -38,11 +33,9 @@
     flex-flow: row;
 }
 .column {
-  
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; 
 }
 
 .row:after {
@@ -80,11 +73,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
 
 table {
   font-family: arial, sans-serif;
@@ -102,12 +90,12 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 .col-text{
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(121, 118, 114);
 }
 .col-graph{
   padding: 5px;
-  height:300px;
+  height:250px;
 }
 .heading{
   float: left;

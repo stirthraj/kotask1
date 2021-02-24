@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Chart1 from "../chart1.jpg";
-import Chart2 from "../chart2.jpg";
+
 import {
   PieChart,
   Pie,
@@ -24,58 +23,58 @@ const data01 = [
 const data = [
   {
     name: "9:00AM",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    uv: 400,
+    pv: 240,
+    amt: 240,
   },
   {
     name: "12:00AM",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    uv: 300,
+    pv: 139,
+    amt: 221,
   },
   {
     name: "3:00PM",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    uv: 200,
+    pv: 980,
+    amt: 229,
   },
   {
     name: "6:00PM",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    uv: 278,
+    pv: 390,
+    amt: 200,
   },
   {
     name: "9:00PM",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    uv: 189,
+    pv: 480,
+    amt: 218,
   },
   {
     name: "12:00PM",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
+    uv: 239,
+    pv: 380,
+    amt: 250,
   },
   {
     name: "3:00AM",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    uv: 349,
+    pv: 430,
+    amt: 210,
   },
   {
     name: "6:00AM",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    uv: 340,
+    pv: 430,
+    amt: 210,
   },
 ];
 
 export default class display extends Component {
   render() {
     return (
-      <div className="content">
+      <div className="container-fluid">
         <h1>User Profile</h1>
         <div className="row">
           <div className="column">
@@ -98,6 +97,7 @@ export default class display extends Component {
                     label
                   />
                   <Tooltip />
+                  
                 </PieChart>
               </ResponsiveContainer>
               <hr />

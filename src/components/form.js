@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 export default class form extends Component {
   render() {
     return (
-      <div className="content">
+      <div className="container-fluid">
         <h1>User Profile</h1>
         <div className="row">
           <div className="column">

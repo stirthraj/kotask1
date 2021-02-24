@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter,Link, Route, Switch} from 'react-router-dom'
+import "bootstrap/dist/css/bootstrap.min.css";
 import Dashboard from '../src/components/display'
 import User from '../src/components/user'
 import Form from '../src/components/form'
@@ -49,7 +50,15 @@ export default class App extends Component {
     );
   }
   Effect = () => {
-    document.getElementById("menu").style.width = "70px";
+    
+    const menu=document.getElementById("menu");
+    if(menu.clientWidth!==80){
+     menu.style.width = "80px";
+    }
+    else{
+      menu.style.width = "120px";
+    }
+    
   };
 }
 

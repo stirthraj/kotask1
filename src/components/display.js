@@ -97,6 +97,7 @@ export default class display extends Component {
                     label
                   />
                   <Tooltip />
+                  <Line type="monotone" dataKey="uhgfv" stroke="#82ca9d" />
                 </PieChart>
               </ResponsiveContainer>
               <hr />

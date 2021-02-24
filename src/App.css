@@ -89,7 +89,7 @@ tr:nth-child(even) {
 }
 .col-text{
   padding: 10px;
-  background-color: rgb(121, 118, 114);
+  background-color: rgb(86, 78, 204);
 }
 .col-graph{
   padding: 5px;
@@ -124,4 +124,10 @@ i{
   margin-right: 5px;
   float: left;
   font-size: 20px;
+}
+@media only screen and (max-width:600px)
+{
+  .link-text{
+    display: none;
+  }
 }

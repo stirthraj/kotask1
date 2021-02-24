@@ -15,7 +15,7 @@ export default class App extends Component {
         <BrowserRouter>
           <div id="menu" className="menu">
             <button onClick={this.Effect}>
-              <i class="fas fa-toggle-on"></i>
+              <i className="fas fa-toggle-on"></i>
               <span className="link-text">Shrink</span>
             </button>
             <Link to="/">
